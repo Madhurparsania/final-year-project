@@ -1,0 +1,161 @@
+/* Museum Page Styles */
+.museum-header {
+  background-color: var(--soft-white);
+  padding: 6rem 0 3rem;
+}
+
+.museum-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--deep-navy);
+}
+
+.museum-header h1 span {
+  color: var(--royal-blue);
+}
+
+.back-home {
+  margin-bottom: 2rem;
+}
+
+.back-home a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--royal-blue);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.back-home a:hover {
+  background-color: var(--light-gray);
+}
+
+.museum-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dark-gray);
+}
+
+.meta-item i {
+  color: var(--royal-blue);
+}
+
+.museum-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.artifacts-section {
+  margin-bottom: 3rem;
+}
+
+.artifacts-section h2 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold-accent);
+}
+
+.artifacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.museum-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  background-color: var(--soft-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--deep-navy);
+}
+
+.info-card h3 i {
+  color: var(--gold-accent);
+}
+
+.location-map {
+  height: 300px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: var(--dark-gray);
+  font-weight: 600;
+}
+
+.timing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timing-table tr {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.timing-table tr:last-child {
+  border-bottom: none;
+}
+
+.timing-table td {
+  padding: 1rem 0;
+}
+
+.timing-table td:last-child {
+  font-weight: 600;
+  color: var(--deep-navy);
+}
+
+@media (max-width: 992px) {
+  .museum-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .museum-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .artifacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .museum-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .museum-header {
+    padding: 5rem 0 2rem;
+  }
+}
